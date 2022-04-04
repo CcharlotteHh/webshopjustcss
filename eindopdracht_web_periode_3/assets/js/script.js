@@ -1,22 +1,31 @@
-const toggleBtn = document.getElementById("toggleBtn");
+const toggleBtn = document.getElementById("toggleBtn"); //for hamburger menu
 const navList = document.getElementById("navList");
 
-toggleBtn.addEventListener('click', () => {
-    navList.classList.toggle('active');
+toggleBtn.addEventListener("click", () => {
+  navList.classList.toggle("active");
 });
 
-var dropdown = document.getElementsByClassName("dropdown-btn");
+var dropdown = document.getElementsByClassName("dropdown-btn"); //for dropdown menu
 
 var i;
 
 for (i = 0; i < dropdown.length; i++) {
-    dropdown[i].addEventListener("click", function() {
-      this.classList.toggle("active");
-      var dropdownContent = this.nextElementSibling;
-      if (dropdownContent.style.display === "block") {
-        dropdownContent.style.display = "none";
-      } else {
-        dropdownContent.style.display = "block";
-      }
-    });
-  }
+  dropdown[i].addEventListener("click", function (event)
+   {event.preventDefault();
+    this.classList.toggle("active");
+    var dropdownContent = this.nextElementSibling;
+    if (dropdownContent.style.display === "block") {
+      dropdownContent.style.display = "none";
+      return false;
+    } else {
+      dropdownContent.style.display = "block";
+      return false;
+    }
+  });
+}
+
+// for image changes
+
+
+
+
