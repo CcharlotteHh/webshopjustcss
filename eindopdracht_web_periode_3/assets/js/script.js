@@ -26,6 +26,10 @@ for (i = 0; i < dropdown.length; i++) {
 
 // for image changes
 
-
+let image1 = document.querySelector('#image1');
+function swap(e){
+  let mainImage = document.querySelector('#mainImage');
+  mainImage.src = e.src;
+}
 
 

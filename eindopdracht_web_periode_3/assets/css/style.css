@@ -140,7 +140,7 @@ header {
   object-fit: cover;
 }
 
-.caption{
+.caption {
   color: white;
   text-align: center;
 }
@@ -169,7 +169,7 @@ header {
   background-color: darkcyan;
 }
 
-.custom_button:hover{
+.custom_button:hover {
   transform: scale(1.02);
 }
 
@@ -220,6 +220,7 @@ footer {
 
 .big-row {
   grid-row: span 3;
+  min-height: 501.8px;
 }
 
 .big-row > img {
@@ -299,6 +300,8 @@ footer {
   align-items: center;
   margin-bottom: 10px;
   padding-bottom: 10px;
+  overflow-x: hidden;
+  overflow-y: auto;
 }
 .cat_about h2 {
   margin-bottom: 2px;
@@ -327,7 +330,7 @@ footer {
 .order_container button:hover {
   transform: scale(1.02);
 }
-@media all and (max-width: 500px) {
+@media all and (max-width: 600px) {
   .product_view {
     flex-wrap: wrap;
   }
@@ -336,6 +339,9 @@ footer {
   }
   .product-info {
     width: 100%;
+  }
+  footer {
+    position: fixed;
   }
 }
 
@@ -355,12 +361,11 @@ footer {
 }
 
 .fa-caret-down {
-  float: right
+  float: right;
 }
 
-
-.dropdown-container{
-  display:none;
+.dropdown-container {
+  display: none;
 }
 
 .dropdown-btn {
@@ -368,18 +373,18 @@ footer {
   height: 7.5%;
   font-size: 18px;
   color: white;
-  background-color:var(--second-purple);
-  border:none;
+  background-color: var(--second-purple);
+  border: none;
   cursor: pointer;
   text-align: left;
-  padding:2%;
+  padding: 2%;
   display: block;
 }
 
 .checkbox-container {
-  padding:2%;
+  padding: 2%;
   text-decoration: none;
-  width:100%;
+  width: 100%;
   text-align: left;
   cursor: pointer;
   outline: none;
@@ -387,12 +392,12 @@ footer {
 }
 
 .active {
-  background-color:var(--background);
+  background-color: var(--background);
   color: white;
 }
 
-.first-dropdown{
-  border-radius:10px 10px 0 0;
+.first-dropdown {
+  border-radius: 10px 10px 0 0;
 }
 
 .dropdown-container {
@@ -403,9 +408,10 @@ footer {
 }
 
 .filter-btn-container {
- 
+  display: flex;
   height: 20%;
-  
+  justify-content:center;
+  align-items: center;
 }
 
 .filter-btn {
@@ -422,7 +428,6 @@ footer {
   margin-top: 1%;
   border: none;
   cursor: pointer;
-
 }
 .filter-btn:hover {
   transform: scale(1.01);
