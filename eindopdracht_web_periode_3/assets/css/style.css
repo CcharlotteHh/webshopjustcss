@@ -143,6 +143,7 @@ header {
 .caption {
   color: white;
   text-align: center;
+  margin-bottom: 1%;
 }
 
 .card-info {
@@ -173,7 +174,7 @@ header {
   transform: scale(1.02);
 }
 
-@media all and (max-width: 500px) {
+@media all and (max-width: 600px) {
   #container {
     overflow-y: scroll;
     position: relative;
@@ -186,9 +187,11 @@ header {
     margin-top: 3%;
   }
   footer {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+   
+      position: fixed; 
+      bottom: 0;
+      left: 0;
+      right: 0;
   }
 }
 
@@ -211,6 +214,7 @@ footer {
 
 .product-images {
   width: 60%;
+  margin-top: 0.5%;
   height: 100%;
   display: grid;
   grid-template-columns: 1fr;
@@ -234,7 +238,7 @@ footer {
 .small-row {
   grid-row: 4/5;
   margin-left: 5px;
-
+max-height: 167.28px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
 }
